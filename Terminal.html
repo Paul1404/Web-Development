@@ -63,7 +63,8 @@ $$/      $$/ $$$$$$$$/ $$$$$$$/           $$/   $$$$$$$$/ $$/   $$/ $$/      $$/
                 + 'ls - show current directory content\n'
                 + 'nmap - run network scan\n'
                 + 'pwd - show current directory\n'
-                + 'sudo - run as super user');
+                + 'sudo - run as super user\n'
+                + 'whoami - show current user');
             },
             ls: function () {
                 this.echo('/bin /boot /dev /etc /home /lib /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var');
@@ -76,6 +77,9 @@ $$/      $$/ $$$$$$$$/ $$$$$$$/           $$/   $$$$$$$$/ $$/   $$/ $$/      $$/
             },
             sudo: function () {
                 this.echo('webterminal is not in the sudoers file. This incident will be reported.')
+            },
+            whoami: function () {
+                this.echo('guest')
             },
         }, {
             greetings: 'Pauls Portfolio - A place to'
